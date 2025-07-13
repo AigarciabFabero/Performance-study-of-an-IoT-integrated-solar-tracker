@@ -1,0 +1,11 @@
+set title "{/:Bold P_{PMP}}" font ",18"
+
+plot "Datos_gnuplot.txt" using 9:1 title "Célula Fotovoltaica 0" w lp lw 3 lt 6, "" u 9:2 title "Célula Fotovoltaica 1" w lp lw 3 lt 7,"" u 9:3 notitle w lp lw 3 lt 6,"" u 9:4 notitle w lp lw 3 lt 7,"" u 9:5 notitle w lp lw 3 lt 6,"" u 9:6 notitle w lp lw 3 lt 7,"" u 9:7 notitle w lp lw 3 lt 6,"" u 9:8 notitle w lp lw 3 lt 7
+
+set yrange [0:2400]
+
+set key center
+
+set key bottom
+
+set ylabel "Potencia [mW]" font ",14"  

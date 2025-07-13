@@ -1,0 +1,18 @@
+f(x) = a * x**2 + b * x + c 
+fit f(x) 'Ajuste_I.txt' using 1:2 via a,b,c 
+plot 'Ajuste_I.txt' u 1:2,f(x)    
+
+Ahora lo embellecemos:
+
+set title 'Calibración de Intensidad' font ",28"
+set title 'Calibración de Tensión' font ",28"
+set ylabel 'Intensidad (A)' font ",20"
+set ylabel 'Tensión (V)' font ",20"
+set xlabel 'Valor ADC (mV)' font ",20"
+set style line 1 ps 1.5 pt 7 lc 'red'
+set style line 2 lw 1.5 lc 'blue'
+
+set grid
+set key bottom center box height 3
+
+plot 'Ajuste_I.txt' u 1:2 pt 3 ps 5 title 'Intensidad',f(x) title 'Ajuste cuadrático' lw 5 lt 6

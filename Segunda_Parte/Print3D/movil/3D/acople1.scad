@@ -1,0 +1,28 @@
+//acople1
+union(){
+difference(){
+union(){
+cube([29.6,50.6,3]);
+translate([-3,-1.4,-20])
+    cube([3,17,23]);
+translate([29.6,-1.4,-20])
+    cube([3,17,23]);
+translate([0,-1.4,-20])
+    cube([29.6,1.4,23]);
+translate([0,50.6,-20])
+    cube([29.6,3,23]);
+translate([0,41.8,-4.2])
+    cube([29.6,9,4.2]);
+translate([0,13.4,-4.2])    
+    cube([29.6,24,4.2]);
+translate([0,0,-4.2])    
+    cube([29.6,9.2,4.2]);
+}
+/*
+translate([14.8,15,-2])
+    cylinder(d=3.1,h=15,$fn=500);
+translate([14.8,35,-2])
+    cylinder(d=3.1,h=15,$fn=500);
+*/
+}
+}

@@ -1,0 +1,21 @@
+Circuit: * C:\Users\Aitor\OneDrive - Universidad de Extremadura\Universidad\TFG\Electrónica\Circuito\Draft1.asc
+
+.OP point found by inspection.
+
+Date: Tue Mar 15 22:14:19 2022
+Total elapsed time: 0.037 seconds.
+
+tnom = 27
+temp = 27
+method = modified trap
+totiter = 3215
+traniter = 3215
+tranpoints = 1575
+accept = 1475
+rejected = 100
+matrix size = 3
+fillins = 0
+solver = Normal
+Matrix Compiler1: 86 bytes object code size  0.0/0.0/[0.0]
+Matrix Compiler2: off  [0.0]/0.0/0.0
+

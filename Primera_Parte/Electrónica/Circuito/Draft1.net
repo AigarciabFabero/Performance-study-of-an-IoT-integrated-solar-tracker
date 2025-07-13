@@ -1,0 +1,11 @@
+* C:\Users\Aitor\OneDrive - Universidad de Extremadura\Universidad\TFG\Electrónica\Circuito\Draft1.asc
+V1 N001 0 PULSE(0 3.2 0 1u 1u 2 4)
+C1 V- N001 100m
+D1 V- 0 D
+C2 V- 0 100m
+D2 V- 0 D
+.model D D
+.lib C:\Users\Aitor\OneDrive - Universidad de Extremadura\Documentos\LTspiceXVII\lib\cmp\standard.dio
+.tran 10
+.backanno
+.end

@@ -1,0 +1,61 @@
+//Soportes:
+cilindros(3.3,35.6,20,3.3,6,4.4);
+
+module cilindros(diam_in,altura,separacion,diam_inserto,h_inserto,diam_inserto_arriba){
+translate([separacion*0,0,0])
+    difference(){
+        cylinder(d=10,h=altura,$fn=6);
+        translate([0,0,-0.01])
+            cylinder(d=diam_in,h=altura*2,$fn=100);
+        //inferior:M3*6*4.2
+        translate([0,0,-0.01])
+            cylinder(d=diam_inserto,h=8,$fn=100);
+        translate([0,0,-0.01])
+            cylinder(d=diam_inserto_arriba,h=2+0.01,$fn=100);
+        //superior:M3*6*4.2
+        translate([0,0,altura-h_inserto])
+            cylinder(d=diam_inserto,h=h_inserto+0.01,$fn=100);
+        translate([0,0,altura-2])
+            cylinder(d=diam_inserto_arriba,h=2+0.01,$fn=100);
+        
+        
+    }
+//-----------Quitar comentario para imprimir los 4------
+/*
+translate([separacion*1,0,0])
+    difference(){
+        cylinder(d=10,h=altura,$fn=5);
+        translate([0,0,-0.01])
+            cylinder(d=diam_in,h=altura*2,$fn=100);
+        //inferior:M3*6*4.2
+        translate([0,0,-0.01])
+            cylinder(d=diam_inserto,h=h_inserto,$fn=100);
+        //superior:M3*6*4.2
+        translate([0,0,altura-6])
+            cylinder(d=diam_inserto,h=h_inserto+0.01,$fn=100);
+    }
+translate([separacion*2,0,0])
+    difference(){
+        cylinder(d=10,h=altura,$fn=5);
+        translate([0,0,-0.01])
+            cylinder(d=diam_in,h=altura*2,$fn=100);
+        //inferior:M3*6*4.2
+        translate([0,0,-0.01])
+            cylinder(d=diam_inserto,h=h_inserto,$fn=100);
+        //superior:M3*6*4.2
+        translate([0,0,altura-6])
+            cylinder(d=diam_inserto,h=h_inserto+0.01,$fn=100);
+    }
+translate([separacion*3,0,0])
+    difference(){
+        cylinder(d=10,h=altura,$fn=5);
+        translate([0,0,-0.01])
+            cylinder(d=diam_in,h=altura*2,$fn=100);
+        //inferior:M3*6*4.2
+        translate([0,0,-0.01])
+            cylinder(d=diam_inserto,h=h_inserto,$fn=100);
+        //superior:M3*6*4.2
+        translate([0,0,altura-6])
+            cylinder(d=diam_inserto,h=h_inserto+0.01,$fn=100);
+    }*/
+}
